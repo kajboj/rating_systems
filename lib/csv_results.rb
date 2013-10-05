@@ -1,6 +1,8 @@
 require 'csv'
 
 class CsvResults
+  include Enumerable
+  
   def initialize filepath
     @filepath = filepath
   end
